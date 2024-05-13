@@ -1,0 +1,283 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "Background",
+            "Width": 480,
+            "Height": 272,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_480x272_puzzle.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "SOLO_B",
+            "X": 30,
+            "Y": 111,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_pressed.png",
+            "TextId": "__SingleUse_6TLE",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "DUO_B",
+            "X": 272,
+            "Y": 111,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_pressed.png",
+            "TextId": "__SingleUse_RR0Q",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "SOLO_GAME",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SOLO_B"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "Screen2"
+            }
+          },
+          {
+            "InteractionName": "DUO_GAME",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "DUO_B"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "Screen2"
+            }
+          },
+          {
+            "InteractionName": "startSoloGame",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SOLO_B"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "startSoloGame"
+            }
+          },
+          {
+            "InteractionName": "startDugoGame",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "DUO_B"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "startDugoGame"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen2",
+        "CanvasBufferSize": 7200,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 480,
+            "Height": 272,
+            "RelativeFilename": "Background.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "leftBrick",
+            "X": 10,
+            "Y": 106,
+            "Width": 10,
+            "Height": 60,
+            "RelativeFilename": "Brick.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "rightBrick",
+            "X": 460,
+            "Y": 106,
+            "Width": 10,
+            "Height": 60,
+            "RelativeFilename": "Brick.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "X": 235,
+            "Width": 10,
+            "Height": 272,
+            "RelativeFilename": "MiddleLine.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image3",
+            "Width": 480,
+            "Height": 10,
+            "RelativeFilename": "Wall.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image3_1",
+            "Y": 262,
+            "Width": 480,
+            "Height": 10,
+            "RelativeFilename": "Wall.png"
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle1",
+            "X": 220,
+            "Y": 116,
+            "Width": 40,
+            "Height": 40,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "CenterX": 20.0,
+            "CenterY": 20.0,
+            "Radius": 20.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "leftScore",
+            "X": 182,
+            "Y": 10,
+            "Width": 53,
+            "Height": 41,
+            "TextId": "__SingleUse_Q02E",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_6YLQ"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "rightScore",
+            "X": 245,
+            "Y": 10,
+            "Width": 53,
+            "Height": 41,
+            "TextId": "__SingleUse_R97G",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_LLCC"
+            }
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "GamePong",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 272
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7",
+    "SubFamily": "STM32H750 Value line",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../STM32H750B-DK.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts",
+      "Video"
+    ]
+  },
+  "Version": "4.23.0",
+  "CreatedBy": "4.23.0"
+}
