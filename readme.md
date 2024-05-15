@@ -9,7 +9,7 @@ The program was created using TouchGFX and STM32CubeIDE. The layout of the eleme
 ## Setup
 
 You load the program onto the board like any other, using the USB connection and loading it through STM32CubeIDE.
-
+![Connected Pins](https://github.com/AljazJus/PongGame_Stm32H750DK_FreeRTOS/blob/main/pins.png)
 ### Joysticks
 
 To connect the joysticks, use the pins at the back of the device. For power, use the 3.3V pin and ground pin, then wire them accordingly. The program only uses one axis of movement from the joystick, so to play the game, you only need to connect one axis for each joystick. Connect the pins to the analog ports A2 and A3. A2 will move the left paddle, and A3 will move the right.
