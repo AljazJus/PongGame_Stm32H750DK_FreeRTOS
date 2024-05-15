@@ -1353,7 +1353,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   }
   /* USER CODE BEGIN Callback 1 */
   if (htim->Instance == TIM2) {
-      HAL_IncTick();
+
 	  timer_ticks++;
 	  if (timer_ticks >= 200) { // 500 ticks = 0.5 seconds
 		  HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);

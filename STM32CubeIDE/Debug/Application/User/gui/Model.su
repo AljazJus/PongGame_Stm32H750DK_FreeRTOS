@@ -1,6 +1,0 @@
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:18:virtual void ModelListener::updateScore(int, int)	0	static
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:19:15:virtual void ModelListener::updateRightBrick(int, int)	0	static
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:20:15:virtual void ModelListener::updateLeftBrick(int, int)	0	static
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:21:15:virtual void ModelListener::updateBall(int, int)	0	static
-/Users/aljazjustin/soal-programi/3.Letnik/VS/GamePong/TouchGFX/gui/src/model/Model.cpp:20:1:Model::Model()	0	static
-/Users/aljazjustin/soal-programi/3.Letnik/VS/GamePong/TouchGFX/gui/src/model/Model.cpp:25:6:void Model::tick()	48	static
